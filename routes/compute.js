@@ -7,6 +7,7 @@ router.get('/', function (req, res, next) {
   const url = new URL(fake_url)
   const search_params = url.searchParams
   myvalue = Number(search_params.get("x"))
+  console.log(" Rehaman computation Page");
   // if paramter is not specified  value of Number(search_params.get("x")) is always zero
   //console.log(Number(search_params.get("x"))+"hello")
   if (myvalue == 0)
